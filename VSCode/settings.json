@@ -1,0 +1,65 @@
+{
+  "typescript.suggestionActions.enabled": false,
+  "javascript.suggestionActions.enabled": false,
+  "editor.tokenColorCustomizations": {
+    "textMateRules": [
+      {
+        "scope": [
+          //following will be in italic
+          "comment",
+          "function",
+          "entity.name.type.class", //class names
+          "constant", //String, Number, Boolean…, this, super
+          "storage", //static keyword
+          "keyword" //import, export, return…
+        ],
+        "settings": {
+          "fontStyle": "italic"
+        }
+      }
+    ]
+  },
+  "files.associations": {
+    ".eslintrc": "json"
+  },
+  /*GXT-Doxygen Documentation Generator插件使用-Begin*/
+  // 作者名和邮箱
+  "doxdocgen.generic.authorName": "gxt_kt",
+  "doxdocgen.generic.authorEmail": "gxt_kt@163.com",
+  "doxdocgen.generic.authorTag": "@Author : {author} email:{email}",
+  // 日期格式
+  "doxdocgen.generic.dateFormat": "YYYY-MM-DD",
+  "doxdocgen.generic.dateTemplate": "@Creat Date : {date}",
+  // 简介格式
+  "doxdocgen.generic.briefTemplate": "@brief{indent:8}{text}",
+  // 文件注释的格式
+  "doxdocgen.file.fileTemplate": "@File Name: {name}",
+  "doxdocgen.file.versionTag": "@Version : 1.0",
+  // 自定义文件注释格式
+  "doxdocgen.file.customTag": [
+    "modification history :",
+    "Date:       Version:      Author:     ",
+    "Changes: "
+  ],
+  // 文件注释组成及顺序
+  "doxdocgen.file.fileOrder": [
+    "file", // @file
+    "brief", // @brief 简介
+    "author", // 作者
+    "version", // 版本
+    "date", // 日期
+    "empty" // 空行
+    // "copyright",// 版权
+    // "custom"	// 自定义
+  ],
+  // 参数注释和返回注释的格式
+  "doxdocgen.generic.paramTemplate": "@param{indent:8}{param}: ",
+  "doxdocgen.generic.returnTemplate": "@return{indent:8}{type}: ",
+  // 函数注释组成及顺序
+  "doxdocgen.generic.order": ["brief", "tparam", "param", "return"],
+  "editor.fontFamily": "Fira Code",
+  "editor.fontLigatures": true,
+  "cmake.configureOnOpen": false
+
+  /*GXT-Doxygen Documentation Generator插件使用-End*/
+}

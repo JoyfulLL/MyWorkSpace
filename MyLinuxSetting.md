@@ -14,3 +14,7 @@ CentOS7 配置PS1：修改/etc/profile文件，末尾加上下面的代码
 ``` shell
 export PS1='[\[\e[34;1m\]\u@\[\e[0m\]\[\e[32;1m\]\H\[\e[0m\]\[\e[31;1m\] \w\[\e[0m\]]\$ '
 ```
+还需要source一下，让其永久生效
+``` shell
+source /etc/profile
+```
